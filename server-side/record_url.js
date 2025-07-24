@@ -11,7 +11,7 @@ gs.print(url)
  * Create a relative URL using parameters with a view in the URL
  * Set the desired view in the last parameter. Leave empty for default view
  */
-var sTableName = grUser.getTableName(),
-    sRecordId = grUser.getUniqueValue(),
+var sTableName = grRecord.getTableName(),
+    sRecordId = grRecord.getUniqueValue(),
     sView = "ess";
 var url = gs.generateURL(sTableName, sRecordId, sView)
