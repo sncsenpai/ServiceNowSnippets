@@ -1,11 +1,11 @@
+var dialogText = "Apparently, this dialogue box is important";
 if (typeof spModal != 'undefined') 
 {
-  spModal.alert("xxxx");
+  spModal.alert(dialogText);
 } 
 else 
 {
-  // Fallback for desktop UI
   var gm = new GlideModal();
-  gm.setTitle("Popup Title");
-  gm.renderWithContent("xxxx");
+  gm.setTitle("⚠️");
+  gm.renderWithContent(dialogText);
 }
